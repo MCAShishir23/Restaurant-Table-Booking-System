@@ -6,7 +6,7 @@ import axios from "axios";
 export default function Availability() {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
-  const [availability, setAvailability] = useState<any[]>([]);
+  const [availability, setAvailability] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 

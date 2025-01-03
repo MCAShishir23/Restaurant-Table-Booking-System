@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 
 export default function BookingsList() {
-  const [bookings, setBookings] = useState<any[]>([]);
+  const [bookings, setBookings] = useState<number | string[]>([]);
   const [showModal, setShowModal] = useState(false);
   const [editingBooking, setEditingBooking] = useState<any>(null);
 
