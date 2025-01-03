@@ -22,7 +22,7 @@ export default function Availability() {
   
     try {
       // Send a POST request to check availability
-      const response = await axios.post("http://localhost:2410/api/checkBooking", {
+      const response = await axios.post("https://rtm-backend-o47d.onrender.com/api/checkBooking", {
         date,
         time,
       });

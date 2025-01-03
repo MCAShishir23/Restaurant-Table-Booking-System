@@ -9,7 +9,7 @@ export default function BookingsList() {
 
   useEffect(() => {
     const fetchBookings = async () => {
-      const response = await fetch("http://localhost:2410/getBookings");
+      const response = await fetch("https://rtm-backend-o47d.onrender.com/getBookings");
       const data = await response.json();
       setBookings(data);
     };
@@ -41,7 +41,7 @@ export default function BookingsList() {
     };
   
     try {
-      const response = await fetch(`http://localhost:2410/editBooking/${editingBooking.id}`, {
+      const response = await fetch(`https://rtm-backend-o47d.onrender.com/editBooking/${editingBooking.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ export default function BookingsList() {
     }
   
     try {
-      const response = await fetch(`http://localhost:2410/deleteBooking/${id}`, {
+      const response = await fetch(`https://rtm-backend-o47d.onrender.com/deleteBooking/${id}`, {
         method: 'DELETE',
       });
       if (response.ok) {
